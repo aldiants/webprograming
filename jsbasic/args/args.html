@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="args.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aldi</title>
+</head>
+<body>
+
+    <div class="alert" id="alert">
+
+        <h1>Selamat datang</h1>
+        <h2 id="resNama"></h2>
+
+        <p id="resEmail"></p>
+        <p id="resAlamat"></p>
+
+        <div class="close" onclick="{keluar()}">
+            X
+        </div>
+
+    </div>
+    
+    <div class="container">
+
+        <h1>Form isis</h1>
+
+        <form action="#">
+
+            <input type="text" placeholder="Masukan nama" id="nama" required>
+            <input type="text" placeholder="Masukan alamat" id="alamat" required>
+            <input type="text" placeholder="Masukan email" id="email" required>
+            <button id="submit" onclick="{reg()}">Kelik</button>
+
+        </form>
+
+    </div>
+
+
+
+
+
+    <script>
+    
+        var reg = ()=>{
+            // menampung element dari DIV container
+            var nama = document.getElementById("nama").value
+            var alamat = document.getElementById("alamat").value
+            var email = document.getElementById("email").value
+            // menampung element dari DIV alert
+            var alt = document.getElementById("alert")
+            var resNama = document.getElementById("resNama")
+            var resAlamat = document.getElementById("resAlamat")
+            var resEmail = document.getElementById("resEmail")
+
+            alt.style.display = "flex"
+            resNama.innerHTML = nama
+            resAlamat.innerHTML = alamat
+            resEmail.innerHTML = email
+
+        }
+
+        var keluar = ()=>{
+            var alt2 = document.getElementById("alert")
+            alt2.style.display = "none"
+        }
+
+
+    </script>
+
+</body>
+</html>

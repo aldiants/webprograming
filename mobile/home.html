@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h3>Selamat masuk</h3>
+        <h1 id="textUser"></h1>
+        <h3 id="textEmail"></h3>
+
+    </div>
+
+    <script>
+    
+        var sesUsr = sessionStorage.getItem('username')
+        var sesEmail = sessionStorage.getItem('email')
+
+        var text = document.getElementById('textUser')
+        var email = document.getElementById('textEmail')
+
+        text.innerHTML = sesUsr
+        email.innerHTML = sesEmail
+    
+    </script>
+
+
+
+</body>
+</html>

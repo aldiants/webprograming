@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="value.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bahir</title>
+</head>
+<body>
+    
+    <div class="kiri">
+
+        <form action="#">
+
+            <input type="text" id="text">
+            <button onclick="{taro()}">
+                Kelik
+            </button>
+        
+        </form>
+
+
+    </div>
+
+
+    <div class="kanan">
+
+        <div class="box">
+            <h1 id="tulisan">
+                Keganti nih pasti
+            </h1>
+        </div>
+
+    </div>
+
+    <script>
+    
+        var taro = function(){
+            var hasil = document.getElementById("text").value
+            var judul = document.getElementById("tulisan")
+
+            tulisan.innerHTML = hasil
+
+        }
+    
+    </script>
+
+
+</body>
+</html>

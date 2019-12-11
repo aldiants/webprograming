@@ -1,0 +1,101 @@
+@media only screen and (max-width: 600px){
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(background.png);
+        font-family: 'Rozha One', serif;
+    }
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 50vw;
+    }
+
+    .logo{
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+
+    .formLogin{
+        width: 80vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.452);
+
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    label{
+        font-size: 20px;
+        margin: 10px;
+        color: white;
+        
+    }
+
+    input{
+        width: 285px;
+        height: 40px;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .btnLogin{
+        width: 285px;
+        height: 40px;
+        border-radius: 30px;
+        background: #425BB5;
+        outline: none;
+        border: none;
+        margin: 20px;
+        color: white;
+    }
+
+    small{
+        margin-top: 10px;
+    }
+
+    .footer{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btnReg{
+        width: 150px;
+        height: 30px;
+        background: #29CB26;
+        border-radius: 30px;
+        color: white;
+        border: none;
+        outline: none;
+    }
+
+/* akhir */
+}

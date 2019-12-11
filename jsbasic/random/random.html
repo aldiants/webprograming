@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="random.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jodoh</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1 id="text">Selamat datang di ramalan masa depan kau</h1>
+
+        <div class="image" id="image"></div>
+
+        <h4>masukan mama mu</h4>
+        <input type="text" id="userInput"><br>
+        <button onclick="{jodoh()}">Lihat jodoh kau kadie</button>
+
+    </div>
+
+
+
+    <script>
+    
+        var jodoh = ()=>{
+            var nama = document.getElementById('userInput').value
+            var text = document.getElementById('text')
+
+            var pasangan = ['lulahfah', 'anyageraldine', 'karinnovilda', 'lucintaluna']
+
+            var acak = Math.floor(Math.random() * pasangan.length)
+            var result = pasangan[acak]
+
+            var img = document.getElementById('image')
+            
+            if(result === 'lulahfah'){
+                img.style.backgroundImage = 'url(lula.jpg)'
+            }
+            else if(result === 'anyageraldine'){
+                img.style.backgroundImage = 'url(anya.jpg)'
+            }
+            else if(result === 'karinnovilda'){
+                img.style.backgroundImage = 'url(awkarin.jpg)'
+            }
+            else if(result === 'lucintaluna'){
+                img.style.backgroundImage = 'url(lucinta.jpg)'
+            }
+
+
+            text.innerHTML = `pasangan ${nama} dimasa depan nih gua kasih tau : ${result}`
+
+        }
+    
+        
+    
+    </script>
+
+
+
+</body>
+</html>

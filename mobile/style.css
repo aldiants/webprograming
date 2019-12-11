@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px){
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-image: url(background.png);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        width: 50vw;
+    }
+
+    .footer{
+        height: 10vh;
+    }
+
+
+
+/* penutup */
+}

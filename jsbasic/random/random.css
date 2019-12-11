@@ -1,0 +1,25 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(https://images.pexels.com/photos/2217366/pexels-photo-2217366.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+}
+
+.image{
+    width: 30vw;
+    height: 50vh;
+    /* border: 1px solid black; */
+    background-size: cover;
+    background-position: center;
+}

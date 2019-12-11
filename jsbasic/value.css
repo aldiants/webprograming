@@ -1,0 +1,35 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+.kiri, .kanan{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.kanan{
+    background-image: url(https://retohercules.com/images/yang-png-16.png);
+    background-position: left;
+    background-size: cover;
+    color: red;
+}
+
+.kanan h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+.kiri{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY4hTAkiGeTmc_SaR8OOqY-nO1ooMDOmagODRq2SsyzGxd3AlZ&s);
+    background-position: left;
+    background-size: cover;
+}
